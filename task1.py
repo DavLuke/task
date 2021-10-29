@@ -28,7 +28,7 @@
 #-after the first block of test, it will follow a reward t block and another then another test
 
 
-### Structure of the task ###
+# Structure of the task #
 #1# Create stimuli. 4 different S which are different in colour
 # Input (none), Output (4 different S which colours are determined pseudorand)
 
@@ -37,3 +37,11 @@
 #3# List of trials for each block, randomize
 
 #etc
+
+#dialog box registering participant number and age
+from psychopy import gui
+exp_info={}
+exp_info['participant_nr']=1
+exp_info['age']=1
+dlg=gui.DlgFromDict(exp_info)
+
